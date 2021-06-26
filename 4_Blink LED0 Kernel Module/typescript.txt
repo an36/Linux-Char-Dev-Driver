@@ -1,0 +1,39 @@
+Script started on 2020-05-21 19:53:21-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="77" LINES="20"]
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo su
+[sudo] password for an36: 
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw4root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw4# echo 0000:00:03.0 > /sys/module/e1000/drivers/pci\:e1000/unbind [2@un[C[C[C[C[C
+bash: echo: write error: No such device
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw4root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw4# exit
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo insmod hw4.ko
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo [K[K[K[K[Kls -l /dev/ece_led 
+crw------- 1 root root 241, 0 May 21 19:53 [0m[40;33;01m/dev/ece_led[0m
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo ./test
+Current blink_rate: 2
+New value of blink_rate: 2
+file(s) closed
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo ./test 23
+Current blink_rate: 2
+New value of blink_rate: 23
+file(s) closed
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo cat /sys/module/hw4/parameters/blink_rate 
+23
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo cat /sys/module/hw4/parameters/blink_rate [A]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ [C[C[C[C[C./test 23[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K0
+ERROR: Invalid Argument
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo ./test 0cat /sys/module/hw4/parameters/blink_rate 
+23
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo cat /sys/module/hw4/parameters/blink_rate [A]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ [C[C[C[C[C./test 0[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K-36
+ERROR: Invalid Argument
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo ./test -36cat /sys/module/hw4/parameters/blink_rate 
+23
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo cat /sys/module/hw4/parameters/blink_rate [A]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ [C[C[C[C[C[19P./test -36
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /sys/module/hw4/parameters/blink_rate [A]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ [C[C[C[C[C./test 500
+Current blink_rate: 23
+New value of blink_rate: 500
+file(s) closed
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ sudo ./test 500cat /sys/module/hw4/parameters/blink_rate 
+500
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw4[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw4[00m$ exit
+
+Script done on 2020-05-21 19:55:18-07:00 [COMMAND_EXIT_CODE="0"]

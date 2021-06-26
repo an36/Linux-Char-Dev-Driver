@@ -1,0 +1,26 @@
+Script started on 2020-05-08 19:48:08-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo su
+[sudo] password for an36: 
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# echo 0000:00:03.0 > /sys/module/e1000/drivers/pci\:e1000/bind [1@u[1@n
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# exit
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo insmod HW3.ko
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo insmod HW3.kosu[K[1Pcript[1Pclearscript[1Pcleardmesgclear dmesg[Ksudo rmmod HW3.kocript[K[1Pclearscript[1Pcleardmesgsudo surmmod HW3.kolspci -s 00:03.0 -vv[13Psudo suinsmod HW3.kosu[Kinsmod HW3.kosu[Klspci -s 00:03.0 -vv[3Psudo rmmod HW3.kolspci -s 00:03.0 -vv
+00:03.0 Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+	Subsystem: Intel Corporation PRO/1000 MT Desktop Adapter
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz+ UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 64 (63750ns min)
+	Interrupt: pin A routed to IRQ 19
+	Region 0: Memory at f8200000 (32-bit, non-prefetchable) [size=128K]
+	Region 2: I/O ports at d020 [size=8]
+	Capabilities: <access denied>
+	Kernel driver in use: HW3_driver
+	Kernel modules: e1000
+
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo rmmod HW3.ko
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo su
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# echo 0000:00:03.0 > /sys/module/e1000/drivers/pci\:e1000/unbind [1P[1P
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# exit
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ exit
+
+Script done on 2020-05-08 19:49:03-07:00 [COMMAND_EXIT_CODE="0"]

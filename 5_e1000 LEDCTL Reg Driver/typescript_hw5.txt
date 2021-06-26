@@ -1,0 +1,38 @@
+Script started on 2020-05-22 13:07:27-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw5[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw5[00m$ sudo ./hw5 -s 00:03.0
+[sudo] password for an36: 
+LEDCTL value: 117867266
+LED0 & LED2 on for 2 seconds
+All LEDs off for 2 seconds
+Looping around LED2, LED1 and LED0: LOOP[1]
+Looping around LED2, LED1 and LED0: LOOP[2]
+Looping around LED2, LED1 and LED0: LOOP[3]
+Looping around LED2, LED1 and LED0: LOOP[4]
+Looping around LED2, LED1 and LED0: LOOP[5]
+Restoring LEDCTL register...
+Good Packets Recieved statics register: 0
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw5[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw5[00m$ sudo ./hw5 -s 00:03.0
+LEDCTL value: 117867266
+LED0 & LED2 on for 2 seconds
+All LEDs off for 2 seconds
+Looping around LED2, LED1 and LED0: LOOP[1]
+Looping around LED2, LED1 and LED0: LOOP[2]
+Looping around LED2, LED1 and LED0: LOOP[3]
+Looping around LED2, LED1 and LED0: LOOP[4]
+Looping around LED2, LED1 and LED0: LOOP[5]
+Restoring LEDCTL register...
+Good Packets Recieved statics register: 1
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw5[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw5[00m$ sudo ./hw5 -s 00:03.0
+LEDCTL value: 117867266
+LED0 & LED2 on for 2 seconds
+All LEDs off for 2 seconds
+Looping around LED2, LED1 and LED0: LOOP[1]
+Looping around LED2, LED1 and LED0: LOOP[2]
+Looping around LED2, LED1 and LED0: LOOP[3]
+Looping around LED2, LED1 and LED0: LOOP[4]
+Looping around LED2, LED1 and LED0: LOOP[5]
+Restoring LEDCTL register...
+Good Packets Recieved statics register: 0
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw5[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw5[00m$ exit
+
+Script done on 2020-05-22 13:08:59-07:00 [COMMAND_EXIT_CODE="0"]

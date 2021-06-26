@@ -1,0 +1,4 @@
+Apr 12 14:14:54 an36-VirtualBox kernel: [  572.531208] Hello, kernel
+
+Apr 12 14:27:50 an36-VirtualBox kernel: [ 1347.804613] Goodbye, kernel
+

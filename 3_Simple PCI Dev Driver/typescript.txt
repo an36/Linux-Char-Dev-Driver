@@ -1,0 +1,20 @@
+Script started on 2020-05-08 21:54:57-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo su
+[sudo] password for an36: 
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# echo 0000:00:03.0 > /sys/module/e1000/drivers/pci\:e1000/unbind [2@un[C[C[C[C[C
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# exit
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo insmod HW3.ko
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo mknod /dev/ece c 241 0
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo ./testing
+Current LED register value: 7068302
+new value of LED register (LED on): 706830E
+new value of LED register (LED off): 706830F
+file closed
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo rmmod HW3.ko
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo rm /dev/ece
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ sudo su
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# echo 0000:00:03.0 > /sys/module/e1000/drivers/pci\:e1000/bind [2P[C[C[C[C[C
+]0;root@an36-VirtualBox: /home/an36/Desktop/ECE373/hw3root@an36-VirtualBox:/home/an36/Desktop/ECE373/hw3# exit
+]0;an36@an36-VirtualBox: ~/Desktop/ECE373/hw3[01;32man36@an36-VirtualBox[00m:[01;34m~/Desktop/ECE373/hw3[00m$ exit
+
+Script done on 2020-05-08 21:56:07-07:00 [COMMAND_EXIT_CODE="0"]
