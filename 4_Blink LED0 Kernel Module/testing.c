@@ -1,7 +1,6 @@
 /*
  * Abdullah Almarzouq	(an36@pdx.edu)
  * 5/22/20
- * ECE373
  *
  * testing: opens, reads and writes to "/sys/module/hw4/parameters/blink_rate" 
  * 		module parameter to view and modify the value of 

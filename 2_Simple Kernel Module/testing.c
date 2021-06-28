@@ -1,7 +1,6 @@
 /*
  * Abdullah Almarzouq	(an36@pdx.edu)
  * 4/22/20
- * ECE373
  *
  * testing: opens, reads and writes to "/sys/module/HW2_2/parameters/exam" 
  * 		module parameter to view and modify the value of 

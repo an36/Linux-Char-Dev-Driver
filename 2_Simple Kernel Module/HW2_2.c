@@ -1,7 +1,6 @@
 /*
  * Abdullah Almarzouq	(an36@pdx.edu)
  * 4/22/2020
- * ECE 373
  *
  * HW2_2: kernel module with 1 parameter called exam
  */

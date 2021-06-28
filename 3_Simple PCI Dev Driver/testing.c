@@ -1,7 +1,6 @@
 /*
  * Abdullah Almarzouq	(an36@pdx.edu)
  * 5/8/20
- * ECE373
  *
  * testing: opens, reads and writes to "/dev/ece" to turn on and off
  * 			an LED.

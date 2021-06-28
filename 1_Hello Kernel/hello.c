@@ -1,10 +1,10 @@
 /*
- * ECE373 | Assignment #1 Problem D | April 12, 2020
  * Author: Abdullah Almarzouq (an36@pdx.edu)
  *
  * The program below creates a "hello" module to be 
  * loaded into the kernel.
  *
+ * April 12, 2020
  */
 
 #include <linux/init.h>

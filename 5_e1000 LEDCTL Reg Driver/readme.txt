@@ -1,7 +1,7 @@
  *										*
  *	Author: Abdullah Almarzouq (an36@pdx.edu)				*
  *	5/22/20									*
- *	ECE373 | Homework 5							*
+ *										*
  *										*
  *	hw5.c: This program works as a userspace driver that reads		*
  *		and modifies the LEDCTL register to turn the LEDs on		*
